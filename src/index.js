@@ -3,16 +3,16 @@ import ReactDOM from 'react-dom';
 
 class App extends React.Component{
     render() {
-        return () => {
+        return (
             <div>
                 <h4>
                     My Website!
                 </h4>
-                <body>
+                <h6>
                     By Nathan Su
-                </body>
+                </h6>
             </div>
-        }
+        )
     }
 }
 
