@@ -1,12 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-class Button extends React.Component {
+class HomeButton extends React.Component {
     render() {
         return (
-            <button> Hello! </button>
+            <div>
+                <button> Hello World! </button>
+                <label> By Nathan Su</label>
+            </div>
         );
     }
 }
 
-ReactDOM.render(<Button />, document);
+ReactDOM.render(<HomeButton />, document);
