@@ -1,4 +1,3 @@
-import { History } from 'history';
 import { routerMiddleware, routerReducer } from 'react-router-redux';
 import {
   applyMiddleware,
@@ -28,10 +27,10 @@ function buildRootReducer(allReducers: ReducersMapObject) {
   return combineReducers<ApplicationState>(reducerWithRouter as any);
 }
 
-export default function configureStore(history: History, initialState?: Application State) {
+export default function configureStore(initialState?: Application State) {
   const sagaMiddleware = createSagaMiddleware();
   const createStoreWithMiddleware = compose(
-    applyMiddleware(sagaMiddleware, routerMiddleware(history))
+    applyMiddleware(sagaMiddleware, routerMiddleware())
   )(createStore);
   
   // Combine all reducers and instantiate the app-wide store instance
