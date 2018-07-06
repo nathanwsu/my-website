@@ -1,8 +1,11 @@
 # Nathan Su
+
 My personal website: https://nathanwsu.github.io/my-website/
 
 ## My Setup
+
 Installed the following:
+
 ```
 //install redux
 npm install --save redux
@@ -20,5 +23,5 @@ npm install --save semantic-ui
 npm install --save react-router-dom
 
 //install less.js
-npm install -g less
+npm install --save less
 ```
