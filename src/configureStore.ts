@@ -1,3 +1,4 @@
+import { History } from 'history';
 import { routerMiddleware, routerReducer } from 'react-router-redux';
 import {
   applyMiddleware,
