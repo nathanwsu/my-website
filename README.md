@@ -20,5 +20,5 @@ npm install --save semantic-ui
 npm install --save react-router-dom
 
 //install less.js
-npm install -g less
+npm install -save less
 ```
