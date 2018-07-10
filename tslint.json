@@ -1,0 +1,126 @@
+{
+  "linterOptions": {
+    "exclude": ["src/staticData/**/*.ts"]
+  },
+  "extends": ["tslint-react"],
+  "rules": {
+    "arrow-parens": false,
+    "arrow-return-shorthand": [false],
+    "comment-format": [true, "check-space"],
+    "import-blacklist": [true, "rxjs"],
+    "interface-over-type-literal": false,
+    "interface-name": false,
+    "max-line-length": [false, 120],
+    "member-access": false,
+    "member-ordering": [
+      true,
+      {
+        "order": "fields-first"
+      }
+    ],
+    "newline-before-return": false,
+    "no-any": false,
+    "no-empty-interface": false,
+    "no-import-side-effect": [
+      true,
+      {
+        "ignore-module":
+          "(\\.html|\\.css|\\.less|\\.json|\\.jpe?g|\\.png|\\.gif)$"
+      }
+    ],
+    "no-inferrable-types": [true, "ignore-params", "ignore-properties"],
+    "no-invalid-this": [true, "check-function-in-method"],
+    "no-null-keyword": false,
+    "no-require-imports": true,
+    "no-this-assignment": [
+      true,
+      {
+        "allow-destructuring": true
+      }
+    ],
+    "no-trailing-whitespace": true,
+    "no-unused-variable": [true, "react"],
+    "object-literal-sort-keys": false,
+    "object-literal-shorthand": false,
+    "one-variable-per-declaration": [false],
+    "only-arrow-functions": [true, "allow-declarations"],
+    "ordered-imports": [false],
+    "prefer-method-signature": false,
+    "prefer-template": [true, "allow-single-concat"],
+    "semicolon": [true, "always"],
+    "triple-equals": [true, "allow-null-check"],
+    "type-literal-delimiter": true,
+    "typedef": [true, "parameter", "property-declaration"],
+    "variable-name": [
+      true,
+      "ban-keywords",
+      "check-format",
+      "allow-pascal-case",
+      "allow-leading-underscore"
+    ],
+    "no-submodule-imports": [
+      true,
+      "@app",
+      "@components",
+      "@shared-components",
+      "@biz-components",
+      "@containers",
+      "@api",
+      "@services",
+      "@utils",
+      "@static-data",
+      "@models",
+      "@images",
+      "@ClientApp",
+      "@views-public",
+      "@views-accountflow",
+      "rxjs",
+      "react-dom/server",
+      "redux-saga/effects"
+    ],
+    "no-implicit-dependencies": [
+      false,
+      "@app",
+      "@components",
+      "@shared-components",
+      "@biz-components",
+      "@containers",
+      "@api",
+      "@services",
+      "@utils",
+      "@static-data",
+      "@models",
+      "@images",
+      "@views-public",
+      "@views-accountflow"
+    ],
+    "quotemark": [true, "single", "jsx-double"],
+    "prefer-object-spread": true,
+    "trailing-comma": [
+      true,
+      {
+        "singleline": "never",
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "never",
+          "typeLiterals": "ignore"
+        },
+        "jsx": "never"
+      }
+    ],
+    // tslint-react
+    "jsx-no-lambda": true,
+    "jsx-alignment": true,
+    "jsx-boolean-value": false,
+    "jsx-curly-spacing": [true, "never"],
+    "jsx-equals-spacing": [true, "never"],
+    "jsx-key": true,
+    "jsx-no-bind": true,
+    "jsx-no-string-ref": true,
+    "jsx-self-close": true,
+    "jsx-no-multiline-js": false,
+    "jsx-wrap-multiline": true
+  },
+  "rulesDirectory": []
+}

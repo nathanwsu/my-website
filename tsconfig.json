@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es5",
+    "jsx": "react",
+    "lib": ["es6", "dom", "es2017"],
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "rootDir": "src",
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "skipDefaultLibCheck": true,
+    "experimentalDecorators": true,
+    "paths": {
+      "@components/*": ["src/components/*"],
+      "@shared-components/*": ["src/components/SharedComponent/*"],
+      "@views/*": ["src/Views/*"],
+      "@containers/*": ["src/containers/*"],
+      "@models/*": ["src/models/*"],
+      "@redux/*": ["src/redux/*"],
+      "@services/*": ["src/services/*"],
+      "@static-data/*": ["src/staticData/*"]
+    }
+  },
+  "exclude": ["bin", "node_modules"]
+}

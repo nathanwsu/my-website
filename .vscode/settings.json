@@ -1,3 +1,26 @@
 {
-    "git.ignoreLimitWarning": true
-}
+    "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "**/*.js": {
+        "when": "$(basename).ts"
+      },
+      "**/*.js.map": true
+    },
+    "editor.formatOnSave": true,
+    "tslint.configFile": "./tslint.json",
+    "tslint.enable": true,
+    "prettier.singleQuote": true,
+    "prettier.eslintIntegration": true,
+    "prettier.trailingComma": "es5",
+    "prettier.jsxBracketSameLine": false,
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "explorer.confirmDelete": false,
+    "search.exclude": {
+      "**/node_modules": true,
+      "**/bower_components": true,
+      "./ClientApp/dist": true,
+      "./wwwroot/dist": true
+    }
+  }
+  
