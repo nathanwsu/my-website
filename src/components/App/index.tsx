@@ -11,7 +11,7 @@ type IAppProps = IAppStateProps & IAppDispatchProps & IAppOtherProps;
 
 interface IAppState {}
 
-export default class MyApp extends React.Component<IAppProps, IAppState> {
+export default class App extends React.Component<IAppProps, IAppState> {
   constructor(props: IAppProps, context?: any) {
     super(props, context);
   }

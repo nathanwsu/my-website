@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Menu } from 'semantic-ui-react';
+import { Menu, Container } from 'semantic-ui-react';
 
 export interface IMeanuHeaderStateProps {}
 
@@ -33,20 +33,22 @@ export default class MenuHeader extends React.Component<
   public render() {
     console.log('This.state: ', this.state);
     return (
-      <Menu>
-        <Menu.Item
-          name="home"
-          active={this.state.activeItem === 'home'}
-          content="Home"
-          onClick={this.handleItemClick}
-        />
+      <Menu fixed="top" borderless className="nav-menu">
+        <Container text>
+          <Menu.Item
+            name="home"
+            active={this.state.activeItem === 'home'}
+            content="Home"
+            onClick={this.handleItemClick}
+          />
 
-        <Menu.Item
-          name="aboutMe"
-          active={this.state.activeItem === 'aboutMe'}
-          content="About Me"
-          onClick={this.handleItemClick}
-        />
+          <Menu.Item
+            name="aboutMe"
+            active={this.state.activeItem === 'aboutMe'}
+            content="About Me"
+            onClick={this.handleItemClick}
+          />
+        </Container>
       </Menu>
     );
   }
